@@ -734,7 +734,7 @@ section.tab .tab_container .tab_in .tab_des ul li p{
 }
 .icons .icons_in ul li{
     width: 200px;
-    height: 200px;
+    height: 150px;
     float: left;
     padding: 40px;
     border-right: 1px solid #ddd;
@@ -747,10 +747,10 @@ section.tab .tab_container .tab_in .tab_des ul li p{
     text-align: center;
 }
 .icons .icons_in ul li .a1 img{
-    width: 150px;
+    width: 130px;
 }
 .icons .icons_in ul li .a2 img{
-    width: 130px;
+    width: 110px;
 }
 .icons .icons_in ul li a p{
     padding-top: 10px;
@@ -764,34 +764,34 @@ section.tab .tab_container .tab_in .tab_des ul li p{
 .info .info_in{
     margin-top: 80px;
     width: 1440px;
-    height: 500px;
+    height: 400px;
     margin: 0 auto;
 }
 .info .info_in div{
     text-align: right;
-    padding-right: 60px;
+    padding-right: 50px;
 }
 .info .info_in div a h3{
-    padding-top: 60px;
-    font-size: 28px;
+    padding-top: 35px;
+    font-size: 24px;
     line-height: 100px;
 }
 .info .info_in div a p{
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 200;
-    line-height: 60px;
+    line-height: 50px;
 }
 .info .info_in .custom{
     float: left;
-    width: 700px;
-    height: 500px;
+    width: 650px;
+    height: 400px;
     background-color: #f7f7f7;
-    margin-right: 40px;
+    margin-right: 140px;
 }
 .info .info_in .ask{
     float: left;
-    width: 700px;
-    height: 500px;
+    width: 650px;
+    height: 400px;
     background-color: #f7f7f7;
 }
 
@@ -881,6 +881,7 @@ section.tab .tab_container .tab_in .tab_des ul li p{
     width: 100%;
     float: left;
     position: relative;
+    z-index: 1;
 }
 .site .site_menu nav > ul > li> a{
     float: left;
@@ -888,6 +889,9 @@ section.tab .tab_container .tab_in .tab_des ul li p{
     padding: 10px;
     color: #aaa;
     font-weight: bold;
+}
+.site .site_menu nav > ul > li.active{
+    z-index: 2;
 }
 .site .site_menu nav > ul > li> a.active{
     color: #fff;
@@ -1005,4 +1009,7 @@ section.tab .tab_container .tab_in .tab_des ul li p{
 }
 .site .site_map .site_banner ul li:last-child a{
     padding: 23px;
+}
+.subColor{
+    color: red;
 }
