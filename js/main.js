@@ -36,6 +36,10 @@ $(document).ready(function(){
     });
     // swiper
     var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+            delay:4000,
+            disableOnInteraction: false
+        },
         spaceBetween: 100,
         loop:true,
         navigation: {
@@ -121,7 +125,12 @@ $(document).ready(function(){
     });
     // swiper2
     var swiper = new Swiper(".mySwiper2", {
+        autoplay: {
+            delay:4000,
+            disableOnInteraction: false
+        },
         spaceBetween: 50,
+        loop:true,
         navigation: {
             nextEl: ".myNext2",
             prevEl: ".myPrev2",
@@ -132,7 +141,12 @@ $(document).ready(function(){
       });
       // swiper3
     var swiper = new Swiper(".mySwiper3", {
+        autoplay: {
+            delay:4000,
+            disableOnInteraction: false
+        },
         spaceBetween: 50,
+        loop:true,
         navigation: {
             nextEl: ".myNext3",
             prevEl: ".myPrev3",
@@ -233,11 +247,11 @@ $(document).ready(function(){
     // .site영역의 .site_menu의 nav주메뉴에 마우스 오버하면 배경과 서브메뉴 나타남
     $('.site_menu nav > ul > li > a').hover(function(){
         // 만약 클릭한 메뉴(a태그)에 active가 없으면
-        if(!($(this).hasClass('active'))){
+        if(!($(this).parent('li').hasClass('active'))){
             // 모든 메뉴에서 active 제거
-            $('.site_menu nav > ul > li > a').removeClass('active');
+            $('.site_menu nav > ul > li').removeClass('active');
             // 클릭한 a태그만 active클래스 추가
-            $(this).addClass('active');
+            $(this).parent('li').addClass('active');
             var siteNum=$(this).parent('li').index();
             // 배경 바뀜
             $('.site_bg ul li').each(function(){
@@ -259,7 +273,7 @@ $(document).ready(function(){
     });
     // .site_menu nav ul li a에서 마우스아웃했을 때
     $('.site_menu nav > ul > li').mouseleave(function(){
-        $(this).find('a').removeClass('active');
+        $(this).removeClass('active');
         $(this).find('p').removeClass('active');
         $(this).find('.sub').hide();
         $('.site_bg ul li').removeClass('active');
