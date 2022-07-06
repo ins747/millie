@@ -690,10 +690,10 @@ section.tab .tab_container .tab_in .tab_des ul li p{
     position: relative;
 }
 .banner .banner_in .banner_box .banner_img .event1{
-    background-image: url(/img/news1.png);
+    background-image: url(../img/news1.png);
 }
 .banner .banner_in .banner_box .banner_img .event2{
-    background-image: url(/img/news2.png);
+    background-image: url(../img/news2.png);
     z-index: 20;
 }
 .banner .banner_in .banner_box .banner_img .event3{
